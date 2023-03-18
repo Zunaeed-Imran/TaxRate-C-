@@ -6,9 +6,13 @@ int main(){
   double sales = 95000;
   cout << "Sales: $" << sales << endl;
 
-  double stateTaxRate = 0.04;
+  const double stateTaxRate = 0.04;
   double stateTax = sales * stateTaxRate;
   cout << "State Tax: $ " << stateTax << endl;
+
+  const double countyTaxRate = 0.02;
+  double countyTax = sales * countyTaxRate;
+  cout << "County Tax: $ " << countyTax << endl;
 
   return 0;
 }
